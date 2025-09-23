@@ -1,0 +1,5 @@
+pandas
+numpy
+seaborn
+-e .
+#-e . in requirements.txt = install your own project in editable mode.
