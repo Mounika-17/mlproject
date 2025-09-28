@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 # Whenever we get a error we want to know the file name and line number where the error has occurred. This is done using sys module. I am going to get my custom error message using error_message_detail function and pass that message to CustomException class.
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()
@@ -16,5 +16,4 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
-    
     
